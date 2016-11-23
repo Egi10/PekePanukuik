@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pinukui1" />
+
+            <TextView
+                android:id="@+id/lvpekerjaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/image"
+                android:text="PEKERJAAN"
+                android:singleLine="true"
+                android:lines="1"
+                android:textColor="#0015ff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/lvalamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:textColor="#0015ff"
+                android:lines="1"
+                android:layout_toRightOf="@+id/image"
+                android:text="Alamat" />
+
+            <TextView
+                android:id="@+id/lvtanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:textColor="#0015ff"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/image"
+                android:text="Tanggal" />
+
+            <TextView
+                android:id="@+id/lvjam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="45dp"
+                android:textColor="#0015ff"
+                android:layout_toRightOf="@+id/image"
+                android:text="Jam" />
+
+            <TextView
+                android:id="@+id/lvid"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@+id/image"
+                android:background="#ffffff"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

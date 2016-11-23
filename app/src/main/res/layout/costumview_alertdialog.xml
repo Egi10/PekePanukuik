@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENCOBA"
+        android:id="@+id/cadtext"
+        android:layout_marginLeft="25dp"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"/>
+
+    <CheckBox
+        android:text="Hapus Permanent Pekerjaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/checkBox" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF303F9F"
+            android:text="IYA"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/btniya"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TIDAK"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#FF303F9F"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@+id/btniya"
+            android:id="@+id/btntidak"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

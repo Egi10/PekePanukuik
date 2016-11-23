@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.egi_fcb.pekepanukuik">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TampilanAwalGridView.MainActivity" />
+        <activity
+            android:name=".EditDANSimpan.Simpan_Activity"
+            android:label="@string/app_name">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TampilanAwalGridView.MainActivity" />
+        </activity>
+        <activity android:name=".EditDANSimpan.Edit_Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CardViewdanRecyclerView.CardViewandRecyclerView" />
+        </activity>
+        <!--
+     ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".CardViewdanRecyclerView.CardViewandRecyclerView"
+            android:label="@string/app_name">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TampilanAwalGridView.MainActivity" />
+        </activity>
+        <activity android:name=".DaftarListView.Daftar_Costum_ListView">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TampilanAwalGridView.MainActivity" />
+        </activity>
+        <activity android:name=".SplashScreen.Activity_Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".TerimaKasih.Activity_TerimaKasih">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TampilanAwalGridView.MainActivity" />
+        </activity>
+
+        <activity android:name=".Tentang.Tentang_Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TampilanAwalGridView.MainActivity" />
+        </activity>
+
+        <activity android:name=".ImageSlider_CaraPenggunaan.ActivityImageSlider">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TampilanAwalGridView.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

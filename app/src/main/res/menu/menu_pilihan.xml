@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+       <!-- Search / will display always -->
+    <item android:id="@+id/cara_penggunaan"
+            android:title="Cara Penggunaan"
+            android:showAsAction="always"/>
+    <item android:id="@+id/tentang"
+        android:title="Tentang"
+        android:showAsAction="always"/>
+    <item android:id="@+id/terima_kasih"
+        android:title="Terima Kasih"
+        android:showAsAction="always"/>
+</menu>
