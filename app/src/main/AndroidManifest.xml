@@ -2,46 +2,47 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.egi_fcb.pekepanukuik">
 
+    <!-- Include permission untuk Google Mobile Ads -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TampilanAwalGridView.MainActivity" />
-        <activity
-            android:name=".EditDANSimpan.Simpan_Activity"
-            android:label="@string/app_name">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TampilanAwalGridView.MainActivity" />
-        </activity>
-        <activity android:name=".EditDANSimpan.Edit_Activity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".CardViewdanRecyclerView.CardViewandRecyclerView" />
-        </activity>
-        <!--
-     ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
-        -->
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
+        <activity android:name=".ZUsangTampilanAwalGridView.MainActivity" />
         <activity
-            android:name=".CardViewdanRecyclerView.CardViewandRecyclerView"
+            android:name=".Package_Simpan.Simpan_Activity"
             android:label="@string/app_name">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TampilanAwalGridView.MainActivity" />
+                android:value=".ZUsangTampilanAwalGridView.Tampilan_Awal" />
         </activity>
-        <activity android:name=".DaftarListView.Daftar_Costum_ListView">
+        <activity android:name=".Package_Edit.Edit_Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TampilanAwalGridView.MainActivity" />
+                android:value=".Package_Tampilan_Trash.Activity_Trash" />
         </activity>
-        <activity android:name=".SplashScreen.Activity_Splash_Screen">
+        <activity
+            android:name=".Package_Tampilan_Trash.Activity_Trash"
+            android:label="@string/app_name">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ZUsangTampilanAwalGridView.Tampilan_Awal" />
+        </activity>
+        <activity android:name=".ZUsangDaftarListView.Daftar_Costum_ListView">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ZUsangTampilanAwalGridView.Tampilan_Awal" />
+        </activity>
+        <activity android:name=".Package_Splash_Screen.Activity_Splash_Screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.SEARCH" />
@@ -49,24 +50,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".TerimaKasih.Activity_TerimaKasih">
+        <activity android:name=".Package_Terima_Kasih.Activity_TerimaKasih">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TampilanAwalGridView.MainActivity" />
+                android:value=".ZUsangTampilanAwalGridView.Tampilan_Awal" />
         </activity>
-
-        <activity android:name=".Tentang.Tentang_Activity">
+        <activity android:name=".Package_Tentang.Tentang_Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TampilanAwalGridView.MainActivity" />
+                android:value=".ZUsangTampilanAwalGridView.Tampilan_Awal" />
         </activity>
-
-        <activity android:name=".ImageSlider_CaraPenggunaan.ActivityImageSlider">
+        <activity android:name=".ZUsangImageSlider_CaraPenggunaan.ActivityImageSlider">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TampilanAwalGridView.MainActivity" />
+                android:value=".ZUsangTampilanAwalGridView.Tampilan_Awal" />
         </activity>
+        <activity android:name=".ZUsangTampilanAwalGridView.Tampilan_Awal" />
+
+        <!-- memasukan elemen Activity dengan atribut configChanges dan theme -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <activity
+            android:name=".Packaga_Tampilan_Utama.Activity_Utama"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
     </application>
 
 </manifest>

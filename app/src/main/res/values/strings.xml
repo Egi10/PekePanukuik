@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">Peke Panukuik</string>
+    <string name="app_name">Pengingat Kerja</string>
+
+    <!-- AdMob ad unit IDs -->
+    <string name="banner_ad_unit_id">ca-app-pub-2332364491275686/2427381052</string>
+
     <string name="title_activity_simpan__daftar__kerja">Simpan Daftar Kerja</string>
 
     <string name="title_activity_simpan">Simpan</string>
@@ -15,4 +19,21 @@
     <string name="red">RED</string>
     <string name="blue">BLUE</string>
     <string name="green">GREEN</string>
+    <string name="title_activity_onboarding">Onboarding</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity__tampilan__utama">Activity_Tampilan_Utama</string>
+    <string name="title_activity__utama">Activity_Utama</string>
+
+    <string name="hint_name">Full Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_sign_up">Sign Up</string>
+
+    <string name="err_msg_tempat">Masukan Tempat Pekerjaan Mu</string>
+    <string name="err_msg_tanggal">Masukan Tanggal Pekerjaan Mu</string>
+    <string name="err_msg_jam">Masukan Jam Pekerjaan Mu</string>
+    <string name="err_msg_jamakhir">Masukan Jam Akhir Pekerjaan Mu</string>
+    <string name="err_msg_pekerjaan">Masukan Pekerjaan Pekerjaan Mu</string>
+
+    <string name="hint_tempat">Tempat</string>
 </resources>

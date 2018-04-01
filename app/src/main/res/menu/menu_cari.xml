@@ -6,4 +6,9 @@
         android:icon="@android:drawable/ic_menu_search"
         app:showAsAction="always"
         app:actionViewClass="android.support.v7.widget.SearchView" />
+
+        <item android:id="@+id/tambah"
+            android:title="tambah"
+            android:icon="@android:drawable/ic_input_add"
+            app:showAsAction="always"/>
 </menu>
