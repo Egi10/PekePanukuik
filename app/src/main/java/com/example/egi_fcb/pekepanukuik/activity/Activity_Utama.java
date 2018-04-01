@@ -1,4 +1,4 @@
-package com.example.egi_fcb.pekepanukuik.Packaga_Tampilan_Utama;
+package com.example.egi_fcb.pekepanukuik.activity;
 
 import android.app.SearchManager;
 import android.content.Context;
@@ -33,16 +33,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.egi_fcb.pekepanukuik.Package_Tampilan_Trash.Activity_Trash;
-import com.example.egi_fcb.pekepanukuik.ZUsangDaftarListView.Daftar_Costum_ListView;
-import com.example.egi_fcb.pekepanukuik.Package_Database.DBDataSource;
-import com.example.egi_fcb.pekepanukuik.Package_Database.DBHelper;
-import com.example.egi_fcb.pekepanukuik.Package_Database.PengingatPekerjaan;
-import com.example.egi_fcb.pekepanukuik.Package_Edit.Edit_Activity;
-import com.example.egi_fcb.pekepanukuik.Package_Simpan.Simpan_Activity;
+import com.example.egi_fcb.pekepanukuik.adapter.ListAdapter;
+import com.example.egi_fcb.pekepanukuik.sqlite.DBDataSource;
+import com.example.egi_fcb.pekepanukuik.sqlite.DBHelper;
+import com.example.egi_fcb.pekepanukuik.sqlite.PengingatPekerjaan;
 import com.example.egi_fcb.pekepanukuik.R;
-import com.example.egi_fcb.pekepanukuik.Package_Tentang.Tentang_Activity;
-import com.example.egi_fcb.pekepanukuik.Package_Terima_Kasih.Activity_TerimaKasih;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
@@ -58,7 +53,6 @@ public class Activity_Utama extends AppCompatActivity
     final Context context = this;
     ListAdapter adapter;
     SearchView mSearchView;
-    private final static String TAG= Daftar_Costum_ListView.class.getName().toString();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -300,7 +294,6 @@ public class Activity_Utama extends AppCompatActivity
             mSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
                 @Override
                 public boolean onQueryTextSubmit(String query) {
-                    Log.d(TAG, "onQueryTextSubmit");
                     cursor = dbDataSource.getPekerjaanListByKeyword(query);
                     adapter.swapCursor(cursor);
 
@@ -309,7 +302,6 @@ public class Activity_Utama extends AppCompatActivity
 
                 @Override
                 public boolean onQueryTextChange(String newText) {
-                    Log.d(TAG, "onQueryTextChange");
                     cursor = dbDataSource.getPekerjaanListByKeyword(newText);
                     adapter.swapCursor(cursor);
                     if (adapter.getCount() < 1){

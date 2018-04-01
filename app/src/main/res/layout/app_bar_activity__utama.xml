@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.egi_fcb.pekepanukuik.Packaga_Tampilan_Utama.Activity_Utama">
+    tools:context="com.example.egi_fcb.pekepanukuik.activity.Activity_Utama">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

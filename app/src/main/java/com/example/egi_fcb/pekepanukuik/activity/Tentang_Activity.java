@@ -1,4 +1,4 @@
-package com.example.egi_fcb.pekepanukuik.Package_Tentang;
+package com.example.egi_fcb.pekepanukuik.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.example.egi_fcb.pekepanukuik.Packaga_Tampilan_Utama.Activity_Utama;
 import com.example.egi_fcb.pekepanukuik.R;
 
 public class Tentang_Activity extends AppCompatActivity {

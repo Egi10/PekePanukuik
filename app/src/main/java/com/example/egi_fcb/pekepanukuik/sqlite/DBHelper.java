@@ -1,14 +1,9 @@
-package com.example.egi_fcb.pekepanukuik.Package_Database;
+package com.example.egi_fcb.pekepanukuik.sqlite;
 
 import android.content.Context;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
-
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
 
 /**
  * Created by Egi_FCB on 8/6/2016.

@@ -1,4 +1,4 @@
-package com.example.egi_fcb.pekepanukuik.Package_Tampilan_Trash;
+package com.example.egi_fcb.pekepanukuik.activity;
 
 import android.app.SearchManager;
 import android.content.Context;
@@ -24,11 +24,12 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.egi_fcb.pekepanukuik.Packaga_Tampilan_Utama.ListAdapter;
-import com.example.egi_fcb.pekepanukuik.Package_Database.DBDataSource;
-import com.example.egi_fcb.pekepanukuik.Package_Database.DBHelper;
-import com.example.egi_fcb.pekepanukuik.Package_Database.PengingatPekerjaan;
-import com.example.egi_fcb.pekepanukuik.Packaga_Tampilan_Utama.Activity_Utama;
+import com.example.egi_fcb.pekepanukuik.adapter.ClickListener;
+import com.example.egi_fcb.pekepanukuik.adapter.RecyclerAdapter;
+import com.example.egi_fcb.pekepanukuik.adapter.ListAdapter;
+import com.example.egi_fcb.pekepanukuik.sqlite.DBDataSource;
+import com.example.egi_fcb.pekepanukuik.sqlite.DBHelper;
+import com.example.egi_fcb.pekepanukuik.sqlite.PengingatPekerjaan;
 import com.example.egi_fcb.pekepanukuik.R;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -36,7 +37,7 @@ import com.google.android.gms.ads.AdView;
 import java.util.List;
 
 
-public class Activity_Trash extends AppCompatActivity implements ClickListener{
+public class Activity_Trash extends AppCompatActivity implements ClickListener {
 
     RecyclerView recyclerView;
     private LinearLayoutManager layoutManager;

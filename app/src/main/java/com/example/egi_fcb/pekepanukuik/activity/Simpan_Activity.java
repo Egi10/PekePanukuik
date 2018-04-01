@@ -1,19 +1,16 @@
-package com.example.egi_fcb.pekepanukuik.Package_Simpan;
+package com.example.egi_fcb.pekepanukuik.activity;
 
+import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
-import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
-import android.os.AsyncTask;
 import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
-import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -24,13 +21,10 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
-import com.example.egi_fcb.pekepanukuik.Package_Database.DBDataSource;
-import com.example.egi_fcb.pekepanukuik.Package_Database.DBHelper;
-import com.example.egi_fcb.pekepanukuik.Package_Database.PengingatPekerjaan;
-import com.example.egi_fcb.pekepanukuik.Packaga_Tampilan_Utama.Activity_Utama;
+import com.example.egi_fcb.pekepanukuik.sqlite.DBDataSource;
+import com.example.egi_fcb.pekepanukuik.sqlite.PengingatPekerjaan;
 import com.example.egi_fcb.pekepanukuik.R;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
@@ -45,8 +39,6 @@ public class Simpan_Activity extends AppCompatActivity {
     private TextInputLayout inputLayouthari, inputLayouttanggal, inputLayoutjam, inputLayoutjamakhir, inputLayoutpekerjaan;
     private static EditText edpekerjaan;
     private DBDataSource dbDataSource;
-
-    private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -129,6 +121,7 @@ public class Simpan_Activity extends AppCompatActivity {
                 if (event.getAction() == MotionEvent.ACTION_UP) {
                     DialogFragment dialogFragment = new TimePicker();
                     dialogFragment.show(getSupportFragmentManager(), "timePicker");
+                    edjam.setFocusable(false);
                 }
                 return true;
             }
@@ -140,16 +133,19 @@ public class Simpan_Activity extends AppCompatActivity {
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
                     DialogFragment dialogFragment = new TimePicker2();
                     dialogFragment.show(getSupportFragmentManager(), "timePicker");
+                    edjamakhir.setFocusable(false);
                 }
                 return false;
             }
         });
+
         edtanggal.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_UP) {
                     DialogFragment dialogFragment = new DatePicker();
                     dialogFragment.show(getSupportFragmentManager(), "datePicker");
+                    edtanggal.setFocusable(false);
                 }
                 return true;
             }
@@ -184,7 +180,8 @@ public class Simpan_Activity extends AppCompatActivity {
         }
     }
 
-    public class TimePicker extends DialogFragment implements TimePickerDialog.OnTimeSetListener {
+    @SuppressLint("ValidFragment")
+    public static class TimePicker extends DialogFragment implements TimePickerDialog.OnTimeSetListener {
         public Dialog onCreateDialog(Bundle savedInstanceState) {
 
             final Calendar calendar = Calendar.getInstance();
@@ -206,26 +203,13 @@ public class Simpan_Activity extends AppCompatActivity {
             if (minute < 10) {
                 minu = "0" + minute;
             }
-
-            //kenapa kode insert disini?
-            //itu jelas2 beda, kmu malah set databasenya saat date picker -_-
-            //saya gak pakai datapicker langsung dari
-            //maksudku ini TimePicker, kmu malah langsung insert ketika TimePicker di set. ?
-            //jadi gak bisa ya bg ?
-            //mainkan logika kamu. masa langsung insert ketika pilih waktu/tanggal ?
-            //kalau saya buat di buutton simpan, nanti pemanggilan datapickernya gak bisa bg, tu harus gettex dari edittext tu bg ?
-            //ya kamu impelemntasinya seharusnya di button simpan itu, jangan saat onTimeSet.
-            //dan juga kode sqlite mu berantakan, saya jadi pusing
-            //saya copy dari projeck yang tadi tu aja bg, say
-
-
-
             String hasil = hour + ":" + minu + " WIB";
             edjam.setText(hasil);
         }
     }
 
-    public class DatePicker extends DialogFragment implements DatePickerDialog.OnDateSetListener {
+    @SuppressLint("ValidFragment")
+    public static class DatePicker extends DialogFragment implements DatePickerDialog.OnDateSetListener {
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             final Calendar calendar = Calendar.getInstance();
 

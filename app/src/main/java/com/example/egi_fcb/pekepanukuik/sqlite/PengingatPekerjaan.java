@@ -1,4 +1,4 @@
-package com.example.egi_fcb.pekepanukuik.Package_Database;
+package com.example.egi_fcb.pekepanukuik.sqlite;
 
 /**
  * Created by Egi_FCB on 8/6/2016.

@@ -19,19 +19,19 @@
             android:value="@integer/google_play_services_version" />
         <activity android:name=".ZUsangTampilanAwalGridView.MainActivity" />
         <activity
-            android:name=".Package_Simpan.Simpan_Activity"
+            android:name=".activity.Simpan_Activity"
             android:label="@string/app_name">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ZUsangTampilanAwalGridView.Tampilan_Awal" />
         </activity>
-        <activity android:name=".Package_Edit.Edit_Activity">
+        <activity android:name=".activity.Edit_Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Package_Tampilan_Trash.Activity_Trash" />
+                android:value=".activity.Activity_Trash" />
         </activity>
         <activity
-            android:name=".Package_Tampilan_Trash.Activity_Trash"
+            android:name=".activity.Activity_Trash"
             android:label="@string/app_name">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -42,7 +42,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ZUsangTampilanAwalGridView.Tampilan_Awal" />
         </activity>
-        <activity android:name=".Package_Splash_Screen.Activity_Splash_Screen">
+        <activity android:name=".activity.Activity_Splash_Screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.SEARCH" />
@@ -50,12 +50,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Package_Terima_Kasih.Activity_TerimaKasih">
+        <activity android:name=".activity.Activity_TerimaKasih">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ZUsangTampilanAwalGridView.Tampilan_Awal" />
         </activity>
-        <activity android:name=".Package_Tentang.Tentang_Activity">
+        <activity android:name=".activity.Tentang_Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ZUsangTampilanAwalGridView.Tampilan_Awal" />
@@ -74,7 +74,7 @@
             android:theme="@android:style/Theme.Translucent" />
 
         <activity
-            android:name=".Packaga_Tampilan_Utama.Activity_Utama"
+            android:name=".activity.Activity_Utama"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>

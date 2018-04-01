@@ -1,4 +1,4 @@
-package com.example.egi_fcb.pekepanukuik.Package_Terima_Kasih;
+package com.example.egi_fcb.pekepanukuik.adapter;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;

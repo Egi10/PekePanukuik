@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.egi_fcb.pekepanukuik.Package_Splash_Screen.Activity_Splash_Screen"
+    tools:context="com.example.egi_fcb.pekepanukuik.activity.Activity_Splash_Screen"
     android:background="@color/colorPrimaryDark">
 
     <ProgressBar

@@ -1,4 +1,4 @@
-package com.example.egi_fcb.pekepanukuik.Package_Tampilan_Trash;
+package com.example.egi_fcb.pekepanukuik.adapter;
 
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.egi_fcb.pekepanukuik.Package_Database.PengingatPekerjaan;
+import com.example.egi_fcb.pekepanukuik.sqlite.PengingatPekerjaan;
 import com.example.egi_fcb.pekepanukuik.R;
 
 import java.util.List;

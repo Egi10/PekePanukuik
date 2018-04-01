@@ -5,7 +5,7 @@
     android:id="@+id/activity_tentang"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.egi_fcb.pekepanukuik.Package_Tentang.Tentang_Activity">
+    tools:context="com.example.egi_fcb.pekepanukuik.activity.Tentang_Activity">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"

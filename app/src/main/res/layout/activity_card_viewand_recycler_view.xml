@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:paddingTop="5dp"
-    tools:context="com.example.egi_fcb.pekepanukuik.Package_Tampilan_Trash.Activity_Trash">
+    tools:context="com.example.egi_fcb.pekepanukuik.activity.Activity_Trash">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"

@@ -1,4 +1,4 @@
-package com.example.egi_fcb.pekepanukuik.Packaga_Tampilan_Utama;
+package com.example.egi_fcb.pekepanukuik.adapter;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.CursorAdapter;
 import android.widget.TextView;
 
-import com.example.egi_fcb.pekepanukuik.Package_Database.DBDataSource;
+import com.example.egi_fcb.pekepanukuik.sqlite.DBDataSource;
 import com.example.egi_fcb.pekepanukuik.R;
 
 /**

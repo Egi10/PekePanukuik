@@ -1,4 +1,4 @@
-package com.example.egi_fcb.pekepanukuik.Package_Database;
+package com.example.egi_fcb.pekepanukuik.sqlite;
 
 import android.content.ContentValues;
 import android.content.Context;

@@ -1,4 +1,4 @@
-package com.example.egi_fcb.pekepanukuik.Package_Edit;
+package com.example.egi_fcb.pekepanukuik.activity;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
@@ -15,9 +15,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.egi_fcb.pekepanukuik.Package_Database.DBDataSource;
-import com.example.egi_fcb.pekepanukuik.Package_Database.PengingatPekerjaan;
-import com.example.egi_fcb.pekepanukuik.Packaga_Tampilan_Utama.Activity_Utama;
+import com.example.egi_fcb.pekepanukuik.sqlite.DBDataSource;
+import com.example.egi_fcb.pekepanukuik.sqlite.PengingatPekerjaan;
 import com.example.egi_fcb.pekepanukuik.R;
 
 import java.util.Calendar;

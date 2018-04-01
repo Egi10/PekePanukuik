@@ -1,4 +1,4 @@
-package com.example.egi_fcb.pekepanukuik.Package_Terima_Kasih;
+package com.example.egi_fcb.pekepanukuik.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ListView;
 
-import com.example.egi_fcb.pekepanukuik.Packaga_Tampilan_Utama.Activity_Utama;
+import com.example.egi_fcb.pekepanukuik.adapter.Adapter_TerimaKasih;
 import com.example.egi_fcb.pekepanukuik.R;
 
 public class Activity_TerimaKasih extends AppCompatActivity {

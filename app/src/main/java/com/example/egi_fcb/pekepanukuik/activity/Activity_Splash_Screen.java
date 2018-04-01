@@ -1,4 +1,4 @@
-package com.example.egi_fcb.pekepanukuik.Package_Splash_Screen;
+package com.example.egi_fcb.pekepanukuik.activity;
 
 import android.content.Intent;
 import android.os.Handler;
@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.example.egi_fcb.pekepanukuik.Packaga_Tampilan_Utama.Activity_Utama;
 import com.example.egi_fcb.pekepanukuik.R;
 
 public class Activity_Splash_Screen extends AppCompatActivity {
